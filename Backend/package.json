@@ -1,13 +1,14 @@
 {
-  "name": "Ecommerce-app",
+  "name": "Ecommerce-app-2023",
   "version": "1.0.0",
   "description": "ecommerce rest api",
   "main": "server.js",
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "server": "nodemon server.js"
-  
+    "server": "nodemon server.js",
+    "client": "npm start --prefix ./client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
   "author": "Techinfoyt",
